@@ -1,48 +1,39 @@
-// ================================
-// localStorage Yardımcıları
-// Sepet verisini tarayıcıda saklar
-// ================================
-
-const CART_KEY = 'beautyshop_cart';
-
-// Sepeti getir
-function getCart() {
-  const data = localStorage.getItem(CART_KEY);
-  return data ? JSON.parse(data) : [];
+function getCart(){
+    const data = localStorage.getItem('cart');  // metni alır
+    if(data){
+        return JSON.parse(data);  // null değilse diziye çevirir
+    } else {
+        return [];
+    }
 }
 
-// Sepeti kaydet
-function saveCart(cart) {
-  localStorage.setItem(CART_KEY, JSON.stringify(cart));
+function saveCart(cart){
+    localStorage.setItem('cart' , JSON.stringify(cart));   // diziyi metne çevirip yazar
 }
 
-// Sepete ürün ekle
-function addToCart(product) {
-  const cart = getCart();
-  const existing = cart.find(item => item.id === product.id);
-  if (existing) {
-    existing.quantity += 1;
-  } else {
-    cart.push({ ...product, quantity: 1 });
-  }
-  saveCart(cart);
-  updateCartCount();
+function addToCart(id , quantity){
+    const cart = getCart();
+    const existing = cart.find(item => item.id === id);
+    if(existing){
+        existing.quantity += quantity;  // varsa adet arttır
+    } else{
+        cart.push({id,quantity});   // yoksa yeni ekler
+    }
+    saveCart(cart);
 }
 
-// Sepetten ürün çıkar
-function removeFromCart(productId) {
-  const cart = getCart().filter(item => item.id !== productId);
-  saveCart(cart);
-  updateCartCount();
+function removeFromCart(id){
+    let cart = getCart();
+    cart = cart.filter(item => item.id !== id);
+    saveCart(cart);
 }
 
-// Sepet ikonundaki sayıyı güncelle
-function updateCartCount() {
-  const cart = getCart();
-  const total = cart.reduce((sum, item) => sum + item.quantity, 0);
-  const badge = document.getElementById('cart-count');
-  if (badge) badge.textContent = total;
+function updateQuantity(id, quantity){
+    const cart = getCart();
+    const item = cart.find(i => i.id === id);
+    if(item){
+        item.quantity = quantity;
+        if(item.quantity < 1) item.quantity = 1;
+    }
+    saveCart(cart);
 }
-
-// Sayfa yüklenince sayacı güncelle
-document.addEventListener('DOMContentLoaded', updateCartCount);

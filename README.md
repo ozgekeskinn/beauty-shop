@@ -1,97 +1,75 @@
-# 💄 Beauty Shop - Noelle Güzellik Mağazası
+# 💄 Beauty Shop - Noelle Kozmetik Mağazası
 
-Bu proje, Wix üzerinde yer alan bir güzellik / kozmetik mağazası şablonundan ilham alınarak HTML, CSS ve JavaScript ile geliştirilmiş statik bir e-ticaret arayüzüdür. Projede amaç; hazır bir web site tasarımını inceleyerek benzer bir arayüzü sıfırdan oluşturmak, ürün verilerini JSON dosyası üzerinden yönetmek ve JavaScript ile dinamik olarak sayfaya aktarmaktır. Proje içerisinde ana sayfa, ürün kategorileri, en çok satanlar, yeni ürünler ve ürün hover etkileşimleri gibi temel e-ticaret arayüz bileşenleri bulunmaktadır.
+Beauty Shop, **Noelle** isimli kurgusal bir kozmetik markası için HTML, CSS ve JavaScript kullanılarak geliştirilmiş statik bir e-ticaret web sitesi arayüzüdür. Proje; ürün listeleme, kategori filtreleme, ürün detay sayfası, sağdan açılan mini sepet paneli, ayrı alışveriş sepeti sayfası ve ödeme sayfası gibi temel e-ticaret akışlarını içerir.
+
+Bu proje hazırlanırken Wix tabanlı modern bir kozmetik mağazası tasarımı referans alınmış; ancak arayüz, sayfa yapısı, ürün verileri, sepet yönetimi ve JavaScript etkileşimleri sıfırdan geliştirilmiştir.
 
 ---
 
 ## 📚 İçindekiler
 
-- [📌 Projenin Amacı](#-projenin-amacı)
-- [🛍️ Proje İçeriği](#️-proje-içeriği)
-- [🧩 Kullanılan Teknolojiler](#-kullanılan-teknolojiler)
-- [📁 Proje Klasör Yapısı](#-proje-klasör-yapısı)
-- [📄 Sayfalar](#-sayfalar)
-- [🎨 Ana Sayfa Bölümleri](#-ana-sayfa-bölümleri)
-  - [1. Header ve Üst Bar](#1-header-ve-üst-bar)
-  - [2. Navbar](#2-navbar)
-  - [3. Hero Section](#3-hero-section)
-  - [4. En Çok Satanlar Bölümü](#4-en-çok-satanlar-bölümü)
-  - [5. Tanıtım / Promo Bölümü](#5-tanıtım--promo-bölümü)
-  - [6. Çok Arananlar Bölümü](#6-çok-arananlar-bölümü)
-  - [7. Kategori Keşfet Bölümü](#7-kategori-keşfet-bölümü)
-  - [8. İndirim Bölümü](#8-indirim-bölümü)
-  - [9. Hakkımızda Bölümü](#9-hakkımızda-bölümü)
-  - [10. Instagram Alanı](#10-instagram-alanı)
-  - [11. E-posta Kayıt Bölümü](#11-e-posta-kayıt-bölümü)
-  - [12. Footer](#12-footer)
-- [🧠 JavaScript Kullanımı](#-javascript-kullanımı)
-  - [Ürünleri JSON’dan Çekme](#ürünleri-jsondan-çekme)
-- [🧾 JSON Ürün Yapısı](#-json-ürün-yapısı)
-- [🖱️ Ürün Hover Etkileşimi](#️-ürün-hover-etkileşimi)
-- [🔍 Ürün Filtreleme Mantığı](#-ürün-filtreleme-mantığı)
-- [🧭 Scroll Etkileşimi](#-scroll-etkileşimi)
-- [💬 Sohbet Kutusu](#-sohbet-kutusu)
-- [🎞️ Footer Animasyonu](#️-footer-animasyonu)
-- [🎯 Projede Öğrenilen Konular](#-projede-öğrenilen-konular)
-- [🚀 Proje Nasıl Çalıştırılır?](#-proje-nasıl-çalıştırılır)
-  - [1. Projeyi indirin veya klonlayın](#1-projeyi-indirin-veya-klonlayın)
-  - [2. Proje klasörüne girin](#2-proje-klasörüne-girin)
-  - [3. Projeyi çalıştırın](#3-projeyi-çalıştırın)
-- [📌 Geliştirilebilecek Özellikler](#-geliştirilebilecek-özellikler)
-- [👩‍💻 Geliştirici](#-geliştirici)
-- [📝 Not](#-not)
+- [Projenin Amacı](#-projenin-amacı)
+- [Proje Özeti](#-proje-özeti)
+- [Kullanılan Teknolojiler](#-kullanılan-teknolojiler)
+- [Proje Klasör Yapısı](#-proje-klasör-yapısı)
+- [Sayfalar](#-sayfalar)
+- [Ana Sayfa Yapısı](#-ana-sayfa-yapısı)
+- [Ürün Listeleme Mantığı](#-ürün-listeleme-mantığı)
+- [Ürün Detay Sayfası](#-ürün-detay-sayfası)
+- [Sepet Sistemi](#-sepet-sistemi)
+- [Alışveriş Sepeti Sayfası](#-alışveriş-sepeti-sayfası)
+- [Ödeme Sayfası](#-ödeme-sayfası)
+- [JSON Ürün Veri Yapısı](#-json-ürün-veri-yapısı)
+- [JavaScript Dosyalarının Görevleri](#-javascript-dosyalarının-görevleri)
+- [CSS ve Tasarım Yapısı](#-css-ve-tasarım-yapısı)
+- [Responsive Tasarım](#-responsive-tasarım)
+- [Proje Nasıl Çalıştırılır?](#-proje-nasıl-çalıştırılır)
+- [Projede Öğrenilen Konular](#-projede-öğrenilen-konular)
+- [Geliştirilebilecek Özellikler](#-geliştirilebilecek-özellikler)
+- [Geliştirici](#-geliştirici)
 
 ---
 
 ## 📌 Projenin Amacı
 
-Bu projenin temel amacı, modern bir kozmetik mağazası arayüzünü HTML, CSS ve JavaScript kullanarak geliştirmektir. Projede özellikle şu konular üzerinde çalışılmıştır:
+Bu projenin temel amacı, gerçek bir e-ticaret sitesinde bulunan temel arayüz ve kullanıcı akışlarını HTML, CSS ve JavaScript ile uygulamaktır. Proje kapsamında özellikle şu konular üzerinde çalışılmıştır:
 
-- Gerçek bir web site şablonunun analiz edilmesi
-- Header, navbar, hero section, ürün kartları ve footer gibi temel arayüz bölümlerinin oluşturulması
-- Ürün bilgilerinin statik HTML yerine JSON dosyasında tutulması
-- JSON verilerinin JavaScript ile okunup DOM üzerinden sayfaya basılması
-- Ürün kartlarında hover durumunda görsel değişimi yapılması
-- Kategori sayfalarının ürün verilerine göre dinamik doldurulması
-- Scroll hareketine bağlı header gizleme/gösterme işlemi
-- Responsive tasarıma uygun dosya yapısının hazırlanması
+- Modern bir kozmetik mağazası arayüzü oluşturmak
+- HTML ile düzenli ve anlamlı sayfa yapıları kurmak
+- CSS Grid ve Flexbox ile sayfa yerleşimleri oluşturmak
+- JavaScript ile JSON dosyasından ürün verilerini çekmek
+- Ürünleri kategori, yeni ürün ve çok satan ürün durumlarına göre listelemek
+- Ürün kartlarında hover görsel değişimi yapmak
+- Ürün detay sayfasını URL parametresine göre dinamik doldurmak
+- Kullanıcının sepete ürün ekleyebilmesini sağlamak
+- Sepet verilerini `localStorage` üzerinde saklamak
+- Sağdan açılan mini sepet paneli oluşturmak
+- Ayrı bir sepet sayfası ve ödeme sayfası oluşturmak
+- Sepet toplamını, ürün adetlerini ve sipariş özetini dinamik hesaplamak
+- Responsive tasarıma uygun bir yapı kurmak
 
 ---
 
-## 🛍️ Proje İçeriği
+## 🛍️ Proje Özeti
 
-Projede kozmetik mağazası için aşağıdaki bölümler hazırlanmıştır:
+Beauty Shop projesi, kozmetik ürünlerinin tanıtıldığı ve satın alma akışının simüle edildiği statik bir web sitesidir. Projede herhangi bir gerçek backend, ödeme altyapısı veya kullanıcı üyelik sistemi bulunmamaktadır. Bunun yerine ürün verileri `products.json` dosyasında tutulur ve JavaScript ile sayfalara dinamik olarak aktarılır.
 
-- Üst bilgilendirme barı
-- Navbar menüsü
-- Hero section
-- En çok satan ürünler alanı
-- Tanıtım / kampanya bölümü
-- Çok aranan ürünler alanı
-- Kategori keşfetme bölümü
-- İndirim bölümü
-- Hakkımızda bölümü
-- Instagram görsel alanı
-- E-posta kayıt bölümü
-- Footer
-- Sohbet kutusu
-- Kategori ve ürün listeleme sayfaları
+Kullanıcı site üzerinde ürünleri inceleyebilir, kategorilere göre ürün listelerini görüntüleyebilir, ürün detay sayfasına gidebilir, istediği ürünü sepete ekleyebilir, sepet panelinden ürün adedini değiştirebilir, sepet sayfasına geçebilir ve ödeme ekranında sipariş özetini görüntüleyebilir.
 
 ---
 
 ## 🧩 Kullanılan Teknolojiler
 
-Projede kullanılan temel teknolojiler şunlardır:
-
 | Teknoloji | Kullanım Amacı |
-|---|---|
-| HTML5 | Sayfa iskeletinin oluşturulması |
-| CSS3 | Görsel tasarım, layout ve responsive düzen |
-| JavaScript | Dinamik ürün listeleme ve kullanıcı etkileşimleri |
+| --- | --- |
+| HTML5 | Sayfa iskeletlerinin oluşturulması |
+| CSS3 | Tasarım, grid/flex yerleşim, animasyon ve responsive yapı |
+| JavaScript | Dinamik ürün listeleme, sepet işlemleri, yönlendirmeler ve etkileşimler |
 | JSON | Ürün verilerinin saklanması |
+| LocalStorage | Sepet verilerinin tarayıcıda tutulması |
 | Font Awesome | İkon kullanımı |
-| Google Fonts | Yazı tipi kullanımı |
-| Bootstrap | Yardımcı sınıflar ve temel responsive destek |
+| Google Fonts | Tipografi |
+| Bootstrap CDN | Temel yardımcı stiller ve responsive altyapı desteği |
 
 ---
 
@@ -100,292 +78,508 @@ Projede kullanılan temel teknolojiler şunlardır:
 ```text
 beauty-shop/
 │
-├── index.html
-├── README.md
-│
 ├── assets/
 │   └── images/
 │       ├── banners/
+│       │   ├── about.avif
+│       │   ├── collection_eye.avif
+│       │   ├── collection_face.avif
+│       │   ├── collection_lips.avif
+│       │   ├── discount_image.avif
+│       │   ├── insta1.jpg
+│       │   ├── insta2.jpg
+│       │   ├── insta3.jpg
+│       │   ├── insta4.jpg
+│       │   ├── insta5.jpg
+│       │   └── promo_lipstick.avif
+│       │
 │       ├── hero/
+│       │   ├── all_products_page.avif
+│       │   ├── bestseller_page.avif
+│       │   ├── eye_page.avif
+│       │   ├── face_page.avif
+│       │   ├── header.avif
+│       │   ├── lips_page.avif
+│       │   └── new_page.avif
+│       │
 │       ├── icons/
+│       │   ├── facebook.png
+│       │   ├── instagram.png
+│       │   ├── twitter.png
+│       │   └── youtube.png
+│       │
 │       └── products/
+│           └── Ürün görselleri
 │
 ├── css/
-│   ├── variables.css
+│   ├── responsive.css
 │   ├── style.css
-│   └── responsive.css
+│   └── variables.css
 │
 ├── data/
 │   └── products.json
 │
 ├── js/
 │   ├── app.js
-│   ├── helpers.js
-│   ├── storage.js
-│   └── components/
-│       ├── cart.js
-│       ├── modal.js
-│       ├── navbar.js
-│       └── slider.js
+│   └── storage.js
 │
-└── pages/
-    ├── all_products.html
-    ├── bestseller.html
-    ├── eye.html
-    ├── face.html
-    ├── lips.html
-    └── new.html
+├── pages/
+│   ├── all_products.html
+│   ├── bestseller.html
+│   ├── cart.html
+│   ├── checkout.html
+│   ├── eye.html
+│   ├── face.html
+│   ├── lips.html
+│   ├── new.html
+│   └── product.html
+│
+├── index.html
+└── README.md
 ```
 
 ---
 
 ## 📄 Sayfalar
 
-Projede ana sayfa dışında farklı ürün listeleme sayfaları da bulunmaktadır.
+### `index.html`
 
-| Sayfa               | Açıklama                                           |
-| ------------------- | -------------------------------------------------- |
-| `index.html`        | Ana sayfa                                          |
-| `all_products.html` | Tüm ürünlerin listelendiği sayfa                   |
-| `bestseller.html`   | En çok satan ürünlerin listelendiği sayfa          |
-| `new.html`          | Yeni ürünlerin listelendiği sayfa                  |
-| `face.html`         | Yüz kategorisindeki ürünlerin listelendiği sayfa   |
-| `lips.html`         | Dudak kategorisindeki ürünlerin listelendiği sayfa |
-| `eye.html`          | Göz kategorisindeki ürünlerin listelendiği sayfa   |
+Projenin ana sayfasıdır. Kullanıcı ilk olarak bu sayfada marka tanıtımı, kampanya alanı, ürün vitrinleri, kategori yönlendirmeleri ve footer alanı ile karşılaşır. Ana sayfada bulunan bölümler:
 
----
-
-## 🎨 Ana Sayfa Bölümleri
-
-### 1. Header ve Üst Bar
-
-Sayfanın en üst kısmında arama alanı, indirim duyurusu ve sosyal medya ikonları bulunmaktadır. Bu bölümde kullanıcıya:
-
-* Arama alanı
-* İndirim bildirimi
-* Instagram, Facebook, YouTube ve X ikonları
-
-sunulmuştur.
+- Header ve üst duyuru barı
+- Navbar
+- Hero section
+- En çok satan ürünler
+- Promo / kampanya bölümü
+- Popüler ürünler
+- Kategori keşif alanı
+- İndirim bölümü
+- Hakkımızda alanı
+- Instagram görsel alanı
+- E-posta kayıt bölümü
+- Footer
+- Chat widget
+- Sağdan açılan mini sepet paneli
 
 ---
 
-### 2. Navbar
+### `all_products.html`
 
-Navbar alanında marka adı ve sayfa bağlantıları bulunmaktadır. Navbar bağlantıları:
+Tüm ürünlerin listelendiği sayfadır. Ürünler `products.json` dosyasından alınır ve JavaScript ile sayfaya basılır. Bu sayfada:
 
-* Tüm Ürünler
-* Yeni
-* En Çok Satanlar
-* Yüz
-* Dudak
-* Göz
-
-Ayrıca giriş ikonu ve alışveriş çantası ikonu da navbar içerisinde yer almaktadır.
+- Tüm ürünler grid yapısında listelenir.
+- Kategori filtresi kullanılabilir.
+- Fiyat aralığı filtreleme alanı bulunur.
+- Daha fazla ürün gösterme mantığı uygulanır.
 
 ---
 
-### 3. Hero Section
+### `new.html`
 
-Hero section, ana sayfanın ilk büyük görsel alanıdır. Bu bölümde marka atmosferini yansıtan büyük bir görsel, başlık, açıklama ve “Satın Al” butonu bulunmaktadır. Hero bölümünde amaç, kullanıcının siteye girdiği anda dikkatini çekmek ve mağazanın kozmetik temasını güçlü bir şekilde yansıtmaktır.
-
----
-
-### 4. En Çok Satanlar Bölümü
-
-Bu bölümde `products.json` dosyasında `isBestSeller` değeri `true` olan ürünler JavaScript ile filtrelenerek sayfaya aktarılmaktadır. Her ürün kartında:
-
-* Ürün görseli
-* Ürün adı
-* Ürün fiyatı
-* Hover durumunda değişen ürün görseli
-
-bulunmaktadır.
+Yeni ürünlerin listelendiği sayfadır. JSON verisinde `isNew: true` olan ürünler bu sayfada gösterilir.
 
 ---
 
-### 5. Tanıtım / Promo Bölümü
+### `bestseller.html`
 
-Bu bölümde siyah arka plana sahip bir tanıtım alanı ve yanında büyük bir ruj görseli bulunmaktadır. Promo section, siteye daha profesyonel ve mağaza temalı bir görünüm kazandırmak için eklenmiştir.
-
----
-
-### 6. Çok Arananlar Bölümü
-
-Bu bölümde `products.json` dosyasında `isPopular` değeri `true` olan ürünler listelenmektedir. Bu yapı sayesinde ürünler HTML içerisinde tek tek yazılmamış, JavaScript ile JSON verileri üzerinden dinamik olarak oluşturulmuştur.
+En çok satan ürünlerin listelendiği sayfadır. JSON verisinde `isBestSeller: true` olan ürünler bu sayfada gösterilir.
 
 ---
 
-### 7. Kategori Keşfet Bölümü
+### `face.html`
 
-Bu bölümde kullanıcılar farklı ürün kategorilerine yönlendirilmektedir. Kategoriler:
-
-* Göz
-* Yüz
-* Dudak
-
-Her kategori, görsel kart yapısı ile sunulmuştur.
+Yüz kategorisindeki ürünlerin listelendiği sayfadır. JSON verisinde `category: "face"` olan ürünler bu sayfada gösterilir.
 
 ---
 
-### 8. İndirim Bölümü
+### `lips.html`
 
-İndirim bölümünde kullanıcıya belirli bir kampanya kodu ile indirim fırsatı sunulmaktadır. Bu alan, e-ticaret sitelerinde sık kullanılan kampanya tanıtım bölümlerine örnek olarak hazırlanmıştır.
-
----
-
-### 9. Hakkımızda Bölümü
-
-Bu bölümde Noelle markası için kısa bir tanıtım metni yer almaktadır. Amaç, markanın cilt bakımına ve güzellik anlayışına verdiği önemi kullanıcıya aktarmaktır.
+Dudak kategorisindeki ürünlerin listelendiği sayfadır. JSON verisinde `category: "lips"` olan ürünler bu sayfada gösterilir.
 
 ---
 
-### 10. Instagram Alanı
+### `eye.html`
 
-Instagram section içerisinde birden fazla görsel grid yapısıyla gösterilmiştir. Görsellerin üzerine gelindiğinde overlay alanı ile sosyal medya metinleri görüntülenmektedir.
-
----
-
-### 11. E-posta Kayıt Bölümü
-
-Kullanıcıların özel fırsatlardan haberdar olması için e-posta kayıt alanı hazırlanmıştır.
+Göz kategorisindeki ürünlerin listelendiği sayfadır. JSON verisinde `category: "eye"` olan ürünler bu sayfada gösterilir.
 
 ---
 
-### 12. Footer
+### `product.html`
 
-Footer bölümünde alışveriş, yardım ve marka bağlantıları gibi alanlara yer verilmiştir. Ayrıca footer elemanlarında scroll ile görünür olduğunda animasyon efekti uygulanmıştır.
+Ürün detay sayfasıdır. Kullanıcı herhangi bir ürün kartına tıkladığında ürünün id bilgisi URL parametresi olarak bu sayfaya gönderilir. Örnek URL:
 
----
-
-## 🧠 JavaScript Kullanımı
-
-Projede JavaScript temel olarak ürün verilerini yönetmek ve sayfa etkileşimlerini oluşturmak için kullanılmıştır.
-
-### Ürünleri JSON’dan Çekme
-
-* Ürün bilgileri `data/products.json` dosyasında tutulmaktadır. JavaScript tarafında bu dosya `fetch()` ile okunur. 
-* Ana sayfa ve alt sayfalar farklı klasör konumlarında olduğu için JSON yolu dinamik olarak belirlenmiştir.
-
-```javascript
-const isSubPage = window.location.pathname.includes('/pages/');
-const jsonPath = isSubPage ? '../data/products.json' : 'data/products.json';
+```text
+pages/product.html?id=2
 ```
 
-Bu yapı sayesinde hem ana sayfada hem de `pages/` klasörü içindeki sayfalarda aynı JavaScript dosyası kullanılabilmektedir.
+Sayfa açıldığında JavaScript bu id değerini okur, ilgili ürünü `products.json` dosyasında bulur ve ürün detaylarını dinamik olarak sayfaya yerleştirir. Bu sayfada:
+
+- Ürün görseli
+- Ürün adı
+- Stok kodu
+- Fiyat
+- Ürün açıklaması
+- Ürün bilgisi
+- İade politikası
+- Gönderim bilgisi
+- Adet seçici
+- Sepete ekle butonu
+- Hemen satın al butonu
+- Sağdan açılan sepet paneli bulunur.
 
 ---
 
-## 🧾 JSON Ürün Yapısı
+### `cart.html`
 
-Her ürün için JSON dosyasında temel bilgiler tutulmaktadır. Örnek ürün yapısı:
+Alışveriş sepeti sayfasıdır. Sağdan açılan mini sepet panelindeki **Sepeti Görüntüle** butonuna tıklanınca kullanıcı bu sayfaya yönlendirilir. Bu sayfada:
+
+- Sepetteki ürünler listelenir.
+- Ürün adedi artırılıp azaltılabilir.
+- Ürün sepetten silinebilir.
+- Ara toplam ve toplam fiyat hesaplanır.
+- Promosyon kodu ve not alanı görsel olarak bulunur.
+- Ödemeye geç butonu ile ödeme sayfasına yönlendirme yapılır.
+
+---
+
+### `checkout.html`
+
+Ödeme sayfasıdır. Sepet panelindeki **Ödeme** butonu veya sepet sayfasındaki **Ödemeye Geç** butonu ile bu sayfaya gidilir. Bu sayfada:
+
+- Sade ödeme başlığı bulunur.
+- Kullanıcıya ödeme ile ilgili bilgilendirme mesajı gösterilir.
+- Sipariş özeti sağ tarafta listelenir.
+- Sepetteki ürünler küçük görsellerle gösterilir.
+- Ürün adetleri, stok kodları ve ürün toplamları görüntülenir.
+- Ara toplam, kargo ve toplam bilgileri hesaplanır.
+- Güvenli ödeme alanı gösterilir.
+
+---
+
+## 🏠 Ana Sayfa Yapısı
+
+Ana sayfa, kozmetik mağazası hissini güçlendirmek için görsel ağırlıklı bölümlerden oluşur.
+
+### Header ve Üst Bar
+
+Sayfanın en üst kısmında arama alanı, indirim duyurusu ve sosyal medya ikonları bulunur. Header alanı sabit konumlandırılmıştır ve scroll hareketine göre gizlenip tekrar gösterilir.
+
+### Navbar
+
+Navbar içinde marka adı ve kategori bağlantıları bulunur. Navbar bağlantıları:
+
+- Tüm Ürünler
+- Yeni
+- En Çok Satanlar
+- Yüz
+- Dudak
+- Göz
+
+Sağ tarafta giriş ikonu ve sepet ikonu yer alır. Sepet ikonuna tıklandığında sağdan açılan mini sepet paneli görüntülenir.
+
+### Hero Section
+
+Ana sayfanın ilk büyük görsel alanıdır. Yeni ürün tanıtımı yapılır ve kullanıcı ürünleri incelemeye yönlendirilir.
+
+### En Çok Satanlar Bölümü
+
+JSON verisinden `isBestSeller` değeri `true` olan ürünler alınır ve kart yapısı ile gösterilir.
+
+### Promo Bölümü
+
+Siyah arka planlı, görsel ve metin içeren kampanya / tanıtım bölümüdür.
+
+### Popüler Ürünler
+
+JSON verisinde `isPopular: true` olan ürünler listelenir.
+
+### Kategori Keşif Bölümü
+
+Yüz, dudak ve göz kategorilerine yönlendirme sağlayan görsel kartlardan oluşur.
+
+### İndirim Bölümü
+
+Kampanya mesajı içeren sabit arka plan görselli bölümdür.
+
+### Hakkımızda Bölümü
+
+Markanın tarzını ve mağaza kimliğini tanıtan metinsel bölümdür.
+
+### Instagram Alanı
+
+Sosyal medya hissi vermek için kullanılan görsel grid alanıdır. Hover durumunda görseller üzerinde overlay görünür.
+
+### E-posta Kayıt Bölümü
+
+Kullanıcıların özel fırsatlar için e-posta adresi bırakabileceği tasarımsal form alanıdır.
+
+### Footer
+
+Footer bölümünde alışveriş bağlantıları, mağaza bilgileri, politika bağlantıları, müşteri hizmetleri bilgileri ve sosyal medya ikonları bulunur.
+
+---
+
+## 🧠 Ürün Listeleme Mantığı
+
+Projede ürün kartları statik olarak HTML içine tek tek yazılmamıştır. Bunun yerine ürünler `data/products.json` dosyasında tutulur ve JavaScript ile ilgili sayfalara dinamik olarak basılır. Bu yaklaşım sayesinde:
+
+- Ürün eklemek kolaylaşır.
+- Aynı veri farklı sayfalarda tekrar kullanılabilir.
+- Kategori sayfaları otomatik oluşturulabilir.
+- Ürün detay sayfası tek bir HTML dosyası üzerinden çalışabilir.
+- Sepet ve ödeme ekranlarında aynı ürün verisi kullanılabilir.
+
+Örneğin bir ürün kartına tıklandığında kullanıcı şu şekilde detay sayfasına yönlendirilir:
+
+```text
+product.html?id=ürünId
+```
+
+Daha sonra ürün detay sayfası bu `id` değerini kullanarak doğru ürünü bulur.
+
+---
+
+## 📦 Ürün Detay Sayfası
+
+Ürün detay sayfası tek bir HTML dosyası üzerinden tüm ürünler için çalışır. Sayfa, URL üzerinden gelen `id` parametresine göre ürün bilgilerini doldurur. Ürün detay sayfasındaki temel akış:
+
+1. URL parametresi okunur.
+2. `products.json` dosyasındaki ürünler çekilir.
+3. URL'deki id ile eşleşen ürün bulunur.
+4. Ürün adı, fiyatı, stok kodu, görseli ve açıklaması sayfaya yazdırılır.
+5. Kullanıcı adet seçer.
+6. Sepete ekle butonuna basınca ürün localStorage üzerindeki sepete eklenir.
+7. Sağdan mini sepet paneli açılır.
+
+---
+
+## 🛒 Sepet Sistemi
+
+Projede sepet işlemleri `localStorage` ile yönetilir. Bu sayede kullanıcı sayfa değiştirince sepet verileri kaybolmaz. Sepet işlemleri `js/storage.js` dosyasında tanımlanmıştır. Temel fonksiyonlar:
+
+| Fonksiyon | Görevi |
+| --- | --- |
+| `getCart()` | LocalStorage içindeki sepet verisini okur |
+| `saveCart(cart)` | Sepeti localStorage içine kaydeder |
+| `addToCart(id, quantity)` | Sepete ürün ekler veya mevcut ürünün adedini artırır |
+| `removeFromCart(id)` | Ürünü sepetten kaldırır |
+| `updateQuantity(id, quantity)` | Ürün adedini günceller |
+
+Sepet verisi localStorage içinde şu mantıkla tutulur:
+
+```json
+[
+  {
+    "id": 2,
+    "quantity": 3
+  }
+]
+```
+
+Burada `id`, ürünün JSON dosyasındaki id değerini; `quantity` ise sepette kaç adet olduğunu ifade eder.
+
+---
+
+## 🧺 Mini Sepet Paneli
+
+Mini sepet paneli, kullanıcı sepet ikonuna veya ürün detay sayfasındaki sepete ekle butonuna bastığında sağ taraftan açılır. Mini sepet panelinde:
+
+- Sepetteki ürün görseli
+- Ürün adı
+- Ürün fiyatı
+- Adet artırma / azaltma butonları
+- Ürün silme ikonu
+- Promosyon kodu alanı
+- Tahmini toplam fiyat
+- Ödeme butonu
+- Sepeti görüntüle butonu bulunur.
+
+Mini sepet panelindeki yönlendirmeler:
+
+| Buton | Yönlendirme |
+| --- | --- |
+| Ödeme | `checkout.html` |
+| Sepeti Görüntüle | `cart.html` |
+
+---
+
+## 🧾 Alışveriş Sepeti Sayfası
+
+`cart.html`, mini sepet panelinin daha geniş ve düzenli sayfa versiyonudur. Kullanıcı burada sepetindeki tüm ürünleri daha detaylı olarak görür. Bu sayfada ürünler sol tarafta listelenir, sağ tarafta ise sipariş özeti bulunur. Sepet sayfasında yapılan işlemler:
+
+- Ürün adedi azaltma
+- Ürün adedi artırma
+- Ürün silme
+- Ara toplam hesaplama
+- Toplam fiyat hesaplama
+- Ödemeye geçiş
+
+Adet artırılıp azaltıldığında localStorage güncellenir ve sepet sayfası yeniden render edilir.
+
+---
+
+## 💳 Ödeme Sayfası
+
+`checkout.html`, ödeme adımını temsil eden sade bir sayfadır. Bu projede gerçek ödeme entegrasyonu yapılmamıştır. Bunun yerine Wix referansındaki yapıya benzer şekilde kullanıcıya ödeme yapılamadığına dair bilgilendirme mesajı gösterilir. Ödeme sayfasında sipariş özeti dinamik olarak localStorage içindeki sepet verisinden oluşturulur. Gösterilen bilgiler:
+
+- Ürün adı
+- Ürün görseli
+- Ürün adedi
+- Stok kodu
+- Ürün satır toplamı
+- Ara toplam
+- Kargo bilgisi
+- Genel toplam
+- Güvenli ödeme bilgisi
+
+---
+
+## 🧾 JSON Ürün Veri Yapısı
+
+Ürünler `data/products.json` dosyasında dizi yapısında tutulur. Örnek ürün yapısı:
 
 ```json
 {
-  "id": 1,
-  "name": "Siyah Güç Göz Kalemi",
+  "id": 2,
+  "name": "Mat Gül Kurusu Ruj",
   "price": "₺150,00",
-  "image": "../assets/images/products/eye_pencil.png",
-  "hoverImage": "../assets/images/products/eye_pencil_hover.png",
-  "category": "eye",
+  "image": "../assets/images/products/lipstick.png",
+  "hoverImage": "../assets/images/products/lipstick_hover.png",
+  "category": "lips",
   "isBestSeller": true,
   "isPopular": false,
-  "isNew": false
+  "isNew": false,
+  "description": "Ürün açıklaması",
+  "productInfo": "Ürün bilgisi"
 }
 ```
 
-Bu yapı sayesinde ürünler şu kriterlere göre filtrelenebilir:
+Alanların görevleri:
 
-| Alan           | Açıklama                                                                |
-| -------------- | ----------------------------------------------------------------------- |
-| `category`     | Ürünün kategorisini belirtir. Örneğin: `eye`, `face`, `lips`            |
-| `isBestSeller` | Ürünün en çok satanlar bölümünde gösterilip gösterilmeyeceğini belirtir |
-| `isPopular`    | Ürünün çok arananlar bölümünde gösterilip gösterilmeyeceğini belirtir   |
-| `isNew`        | Ürünün yeni ürünler sayfasında gösterilip gösterilmeyeceğini belirtir   |
-| `image`        | Ürünün normal görsel yolunu tutar                                       |
-| `hoverImage`   | Hover durumunda gösterilecek görsel yolunu tutar                        |
+| Alan | Açıklama |
+| --- | --- |
+| `id` | Ürünün benzersiz kimlik numarası |
+| `name` | Ürün adı |
+| `price` | Ürün fiyatı |
+| `image` | Ürün ana görseli |
+| `hoverImage` | Hover sırasında gösterilecek ürün görseli |
+| `category` | Ürün kategorisi |
+| `isBestSeller` | Ürünün çok satan olup olmadığını belirtir |
+| `isPopular` | Ürünün popüler ürün olup olmadığını belirtir |
+| `isNew` | Ürünün yeni ürün olup olmadığını belirtir |
+| `description` | Ürün detay sayfasındaki açıklama |
+| `productInfo` | Accordion içinde gösterilen ürün bilgisi |
 
 ---
 
-## 🖱️ Ürün Hover Etkileşimi
+## ⚙️ JavaScript Dosyalarının Görevleri
 
-Ürün kartlarında kullanıcı mouse ile kartın üzerine geldiğinde ürün görseli değişmektedir. Bu işlem JavaScript ile yapılmıştır. Her ürünün normal görseli `image`, hover görseli ise `hoverImage` alanında tutulmaktadır. Mantık şu şekildedir:
+### `app.js`
 
-```text
-Mouse ürün kartının üzerine gelir
-↓
-Normal ürün görseli hover görseli ile değiştirilir
-↓
-Mouse karttan ayrılır
-↓
-Görsel tekrar eski haline döner
+Projenin ana JavaScript dosyasıdır. Sayfa üzerindeki dinamik işlemlerin büyük bölümü bu dosyada yönetilir. Başlıca görevleri:
+
+- Header'ın scroll ile gizlenip gösterilmesi
+- JSON ürün verilerinin çekilmesi
+- Ana sayfa ürün kartlarının oluşturulması
+- Popüler ve çok satan ürünlerin filtrelenmesi
+- Kategori sayfalarının doldurulması
+- Tüm ürünler sayfasında kategori ve fiyat filtreleme işlemleri
+- Ürün kartına tıklanınca detay sayfasına yönlendirme
+- Ürün detay sayfasını URL parametresine göre doldurma
+- Ürün bilgisi, iade politikası ve gönderim bilgisi accordion yapısı
+- Adet artırma / azaltma işlemleri
+- Mini sepet panelinin açılıp kapanması
+- Sepet ürünlerinin render edilmesi
+- Cart sayfasının render edilmesi
+- Checkout sayfasının render edilmesi
+- Chat widget açma / kapama işlemi
+- Footer animasyonu
+- Filtre grup başlıklarının açılıp kapanması
+
+---
+
+### `storage.js`
+
+Sepet verisinin localStorage üzerinde saklanmasını sağlayan dosyadır. Bu dosya sayesinde sepet bilgileri sayfalar arasında korunur. Kullanıcı ürün detay sayfasından sepete ürün ekledikten sonra sepet sayfasına veya ödeme sayfasına geçtiğinde aynı ürünler görüntülenmeye devam eder.
+
+---
+
+## 🎨 CSS ve Tasarım Yapısı
+
+Projede CSS yapısı üç ana dosyaya ayrılmıştır:
+
+| Dosya | Görev |
+| --- | --- |
+| `variables.css` | Renk ve genel değişken tanımları |
+| `style.css` | Ana tasarım, sayfa yerleşimleri, ürün kartları, sepet ve checkout stilleri |
+| `responsive.css` | Mobil ve tablet ekranlara uyum sağlayan medya sorguları |
+
+### `variables.css`
+
+Bu dosyada projede tekrar kullanılan renk değerleri değişken olarak tanımlanır. Böylece tasarımda renk değişikliği gerektiğinde tek bir noktadan düzenleme yapılabilir. Örnek kullanım:
+
+```css
+background-color: var(--color-navbar);
+color: var(--color-white);
 ```
 
-Bu özellik ürün kartlarına daha dinamik ve profesyonel bir görünüm kazandırmıştır.
+### `style.css`
+
+Projedeki ana stiller burada yer alır. Header, navbar, hero section, ürün kartları, kategori sayfaları, ürün detay sayfası, sepet paneli, cart sayfası, checkout sayfası, footer ve chat widget bu dosyada stillendirilmiştir.
+
+### `responsive.css`
+
+Farklı ekran boyutlarında grid yapılarının tek sütuna düşmesi, menü ve ürün kartlarının daha küçük ekranlara uyum sağlaması gibi düzenlemeler bu dosyada yapılır.
 
 ---
 
-## 🔍 Ürün Filtreleme Mantığı
+## 📱 Responsive Tasarım
 
-Projede ürünler JSON içerisindeki alanlara göre filtrelenmektedir. Örneğin:
+Proje masaüstü görünüm ağırlıklı hazırlanmış olsa da responsive CSS dosyası ile tablet ve mobil ekranlara uyum sağlamak için gerekli düzenlemeler yapılmıştır. Responsive yapı kapsamında:
 
-* En çok satan ürünler için `isBestSeller === true`
-* Çok aranan ürünler için `isPopular === true`
-* Yeni ürünler için `isNew === true`
-* Yüz ürünleri için `category === "face"`
-* Dudak ürünleri için `category === "lips"`
-* Göz ürünleri için `category === "eye"`
+- Ürün grid sayıları ekran boyutuna göre azaltılır.
+- Cart sayfası küçük ekranlarda tek sütuna düşer.
+- Checkout sayfası küçük ekranlarda alt alta görünür.
+- Görsel alanlar taşma yapmayacak şekilde düzenlenir.
+- Form ve buton genişlikleri mobil ekrana uygun hale getirilir.
 
-Bu yöntem, ürünleri doğrudan HTML içerisine yazmak yerine daha yönetilebilir bir veri yapısı oluşturmayı sağlamıştır.
+---
+
+## 💬 Chat Widget
+
+Projede sağ alt köşede sabit duran bir sohbet butonu bulunur. Kullanıcı bu butona tıkladığında chat kutusu açılır. Kapatma ikonuna basıldığında tekrar kapanır. Bu yapı gerçek bir mesajlaşma altyapısına bağlı değildir. Arayüz ve kullanıcı etkileşimi amacıyla hazırlanmıştır.
 
 ---
 
 ## 🧭 Scroll Etkileşimi
 
-Sayfada scroll hareketine göre header alanı gizlenip tekrar gösterilmektedir. Kullanıcı aşağı doğru kaydırdığında header yukarı doğru gizlenir. Yukarı doğru kaydırdığında tekrar görünür hale gelir. Bu yapı, kullanıcıya daha geniş bir içerik alanı sunmak ve modern web sitelerindeki scroll davranışını taklit etmek için eklenmiştir.
+Header alanı scroll hareketine göre gizlenip tekrar görünür. Kullanıcı aşağı kaydırdığında header gizlenir, yukarı kaydırdığında tekrar görünür. Bu işlem JavaScript ile `window.scrollY` değeri takip edilerek yapılır.
 
 ---
 
-## 💬 Sohbet Kutusu
+## 🧮 Fiyat Hesaplama Mantığı
 
-Projede sağ alt kısımda bir sohbet butonu yer almaktadır. Kullanıcı butona tıkladığında sohbet kutusu açılır, kapatma butonuna tıkladığında ise kapanır. Bu özellik gerçek e-ticaret sitelerinde sık kullanılan canlı destek arayüzüne benzer bir kullanıcı deneyimi oluşturmak için hazırlanmıştır.
+Ürün fiyatları JSON dosyasında metin olarak tutulur:
 
----
+```text
+₺150,00
+```
 
-## 🎞️ Footer Animasyonu
-
-Footer kolonları için `IntersectionObserver` kullanılmıştır. Footer alanı ekranda görünür hale geldiğinde ilgili kolonlara animasyon class’ı eklenir. Bu sayede footer bölümü kullanıcı sayfanın sonuna geldiğinde daha canlı bir şekilde görüntülenir.
-
----
-
-## 🎯 Projede Öğrenilen Konular
-
-Bu proje geliştirilirken aşağıdaki konular üzerinde pratik yapılmıştır:
-
-* HTML ile semantik sayfa yapısı oluşturma
-* CSS ile layout tasarımı yapma
-* Flexbox kullanımı
-* Görsel hizalama ve ürün kartı tasarımı
-* Hover efektleri
-* JavaScript ile DOM manipülasyonu
-* `fetch()` ile JSON dosyasından veri çekme
-* JSON verilerini filtreleme
-* Dinamik ürün kartı oluşturma
-* Sayfa konumuna göre veri yolu belirleme
-* Scroll event kullanımı
-* IntersectionObserver kullanımı
-* Çok sayfalı statik web sitesi yapısı kurma
+Toplam hesaplama yapılabilmesi için bu değer JavaScript içinde sayıya çevrilir. Bunun için `priceToNumber()` fonksiyonu kullanılır. Bu fonksiyon fiyat metnindeki para birimi ve noktalama karakterlerini temizleyerek fiyatı sayısal değere dönüştürür. Böylece ürün adedi ile çarpılarak satır toplamı ve genel toplam hesaplanabilir.
 
 ---
 
 ## 🚀 Proje Nasıl Çalıştırılır?
 
-Projeyi çalıştırmak için herhangi bir backend veya veritabanı kurulumuna gerek yoktur.
+Bu proje statik bir HTML, CSS ve JavaScript projesidir. Kurulum için Node.js, npm veya backend sunucusu gerekmez.
 
 ### 1. Projeyi indirin veya klonlayın
 
 ```bash
 git clone <repo-linki>
 ```
+
+veya GitHub üzerinden ZIP olarak indirip klasöre çıkarın.
 
 ### 2. Proje klasörüne girin
 
@@ -395,38 +589,100 @@ cd beauty-shop
 
 ### 3. Projeyi çalıştırın
 
-Projeyi en sağlıklı şekilde çalıştırmak için Visual Studio Code üzerinde **Live Server** eklentisi kullanılabilir.
+Projeyi açmak için `index.html` dosyasını tarayıcıda çalıştırabilirsiniz. Ancak JSON dosyası `fetch()` ile okunduğu için bazı tarayıcılarda doğrudan dosya açma yöntemi sorun çıkarabilir. Bu nedenle VS Code üzerinden **Live Server** eklentisi ile çalıştırılması önerilir.
+
+VS Code ile çalıştırma adımları:
+
+1. Proje klasörünü VS Code ile açın.
+2. Live Server eklentisini kurun.
+3. `index.html` dosyasına sağ tıklayın.
+4. **Open with Live Server** seçeneğine tıklayın.
+
+---
+
+## 🎯 Projede Öğrenilen Konular
+
+Bu proje kapsamında aşağıdaki konular uygulamalı olarak çalışılmıştır:
+
+- HTML sayfa yapısı oluşturma
+- CSS ile modern arayüz tasarlama
+- CSS Grid kullanımı
+- Flexbox kullanımı
+- Sabit header yapısı
+- Hover efektleri
+- Responsive tasarım
+- JavaScript ile DOM manipülasyonu
+- JSON dosyasından veri çekme
+- `fetch()` kullanımı
+- URL parametresi okuma
+- Dinamik ürün detay sayfası oluşturma
+- LocalStorage kullanımı
+- Sepet sistemi geliştirme
+- Ürün adet güncelleme
+- Sepetten ürün silme
+- Sipariş toplamı hesaplama
+- Mini sepet paneli oluşturma
+- Ayrı cart ve checkout sayfaları oluşturma
+- Sayfalar arası yönlendirme
+- Basit chat widget tasarımı
+- Footer animasyonu
+
+---
+
+## 🧪 Proje Akışı
+
+Kullanıcının site içinde izleyebileceği temel akış şu şekildedir:
 
 ```text
-index.html dosyasına sağ tıkla
-↓
-Open with Live Server
+Ana Sayfa
+   ↓
+Kategori veya Ürün Kartı
+   ↓
+Ürün Detay Sayfası
+   ↓
+Sepete Ekle
+   ↓
+Mini Sepet Paneli
+   ↓
+Sepeti Görüntüle
+   ↓
+Alışveriş Sepeti Sayfası
+   ↓
+Ödemeye Geç
+   ↓
+Checkout Sayfası
 ```
 
-> Not: Ürünler `products.json` dosyasından `fetch()` ile çekildiği için projeyi doğrudan dosya olarak açmak yerine Live Server ile çalıştırmak daha sağlıklıdır.
+Bu akış, temel bir e-ticaret sitesinde bulunan ürün inceleme ve satın alma sürecini simüle eder.
 
 ---
 
 ## 📌 Geliştirilebilecek Özellikler
 
-Proje ilerleyen aşamalarda aşağıdaki özelliklerle geliştirilebilir:
+Proje statik bir arayüz olarak geliştirilmiştir. İlerleyen aşamalarda aşağıdaki özellikler eklenebilir:
 
-* Sepete ürün ekleme sistemi
-* Sepet toplam tutarı hesaplama
-* Ürün detay modalı
-* Mobil hamburger menü
-* Ürün arama özelliği
-* Kategoriye göre filtreleme
-* LocalStorage ile sepet verilerini saklama
-* Favori ürünler sistemi
-* Form validasyonu
-* Responsive tasarımın daha detaylı geliştirilmesi
+- Gerçek kullanıcı giriş sistemi
+- Backend API bağlantısı
+- Veritabanı entegrasyonu
+- Gerçek ödeme sistemi
+- Ürün arama fonksiyonunun aktif hale getirilmesi
+- Ürün favorileme sistemi
+- Promosyon kodu doğrulama
+- Sepette kargo ücreti hesaplama
+- Sipariş oluşturma ve sipariş geçmişi
+- Stok kontrol sistemi
+- Admin paneli
+- Ürün ekleme / güncelleme / silme işlemleri
+- Mobil hamburger menü
+- Ürün sıralama seçenekleri
+- Daha gelişmiş filtreleme sistemi
+- Form validasyonları
 
 ---
 
 ## 👩‍💻 Geliştirici
 
-Bu proje, HTML, CSS ve JavaScript kullanılarak geliştirilen bir frontend arayüz çalışmasıdır. 
+Bu proje, web geliştirme pratiği yapmak ve modern bir e-ticaret arayüzünü HTML, CSS ve JavaScript ile oluşturmak amacıyla geliştirilmiştir.
 
 **Geliştirici:** Özge Keskin
 
@@ -434,4 +690,4 @@ Bu proje, HTML, CSS ve JavaScript kullanılarak geliştirilen bir frontend aray�
 
 ## 📝 Not
 
-Bu proje eğitim ve pratik amaçlı geliştirilmiştir. Tasarım sürecinde bir Wix güzellik mağazası şablonu referans alınmış, proje HTML, CSS ve JavaScript ile yeniden oluşturulmuştur.
+Bu proje eğitim ve portfolyo amacıyla hazırlanmıştır. Gerçek ödeme işlemi, gerçek kullanıcı üyeliği veya canlı sipariş yönetimi içermez. Ürünler ve marka bilgileri proje senaryosu kapsamında kurgusal olarak kullanılmıştır.

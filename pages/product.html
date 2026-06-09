@@ -68,72 +68,69 @@
     </section>
   </div>
 
-    <section class="hero-section hero-page">
-    <div class="hero-section-content">
-        <h5>TÜM ÜRÜNLER</h5>
+  <section class="body">
+    <div class="breadcrumb">
+        <div class="left-breadcrumb">
+            <a href="../index.html">Ana Sayfa</a>
+            <span> / </span>
+            <span id="breadcrumb-name"></span>
+        </div>
+        <div class="right-breadcrumb">
+            <i class="fa-solid fa-chevron-left"></i>
+            <span class="right-breadcrumb-button"> Önceki</span>
+            <span> | </span>
+            <span class="right-breadcrumb-button">İleri </span>
+            <i class="fa-solid fa-chevron-right"></i>
+        </div>
     </div>
-    <img src="../assets/images/hero/all_products_page.avif" class="hero-image" alt="hero">
-    </section>
 
-    <section class="all-products-section">
-        <div class="all-products-container">
+    <div class="product-container">
+        <div class="product-container-img">
+            <img src="" alt="" id="product-image">
+            <p id="product-description"></p>
+        </div>
+        <div class="product-container-content">
+            <h1 id="product-h1"></h1>
+            <p id="product-stock-code"></p>
+            <p id="product-price"></p>
+            <label>Adet *</label>
 
-            <!-- Sol: Filtre Paneli -->
-            <aside class="filter-panel">
-                <h3>Filtrele:</h3>
-                <hr>
-                <div class="filter-group">
-                    <div class="filter-group-header">
-                        <span class="filter-group-header-active">Kategori</span>
-                        <i class="fa-solid fa-minus"></i>
+            <div class="quantity-selector">
+                <button class="qty-minus">−</button>
+                <input type="text" class="qty-input" value="1">
+                <button class="qty-plus">+</button>
+            </div>
+
+            <div class="add-to-basket-container">
+                <button class="add-to-basket">Sepete Ekle</button>
+                <span><i class="fa-regular fa-heart"></i></span>
+            </div>
+            <button class="buy-now">Hemen Satın Al</button>
+
+            <div class="product-details">
+                <aside>
+                    <div class="product-details-header">
+                        <h3>ÜRÜN BİLGİSİ</h3>
+                        <i class="fa-solid fa-plus"></i>
                     </div>
-                    <ul class="filter-list">
-                        <li class="filter-item item-all active">Hepsi</li>
-                        <li class="filter-item item-eye">Göz</li>
-                        <li class="filter-item item-face">Yüz</li>
-                        <li class="filter-item item-lips">Dudak</li>
-                        <li class="filter-item item-bestseller">En Çok Satanlar</li>
-                    </ul>
-                </div>
-                <hr>
-                <div class="filter-group">
-                  <div class="filter-group-header">
-                      <span class="filter-group-header-hidden">Fiyat</span>
-                      <i class="fa-solid fa-minus"></i>
-                  </div>
+                    <div class="product-details-content hidden" id="info-product"></div>
+                    
+                    <div class="product-details-header">
+                        <h3>ÜRÜN VE PARA İADE POLİTİKASI</h3>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="product-details-content hidden" id="info-return">Ürünlerimizi, teslim aldığınız tarihten itibaren 14 gün içinde iade edebilirsiniz. İade etmek istediğiniz ürünün kullanılmamış, denenmemiş ve orijinal ambalajında olması gerekmektedir. Hijyen kuralları gereği ambalajı açılmış kozmetik ürünlerde iade kabul edilmemektedir. İade onaylandıktan sonra ödemeniz, kullandığınız ödeme yöntemine 7 iş günü içinde geri yansıtılır.</div>
 
-                  <div class="price-filter">
-                      <div class="price-slider">
-                          <div class="price-track"></div>
-                          <div class="price-track-fill" id="priceTrackFill"></div>
-                          <input type="range" id="priceMin" min="150" max="300" value="150" step="10">
-                          <input type="range" id="priceMax" min="150" max="300" value="300" step="10">
-                      </div>
-                      <div class="price-values">
-                          <span id="priceMinVal">₺150</span>
-                          <span id="priceMaxVal">₺300</span>
-                      </div>
-                  </div>
-              </div>
-            </aside>
-
-            <!-- Sağ: Ürünler -->
-            <div class="all-products-right">
-                <div class="sort-bar">
-                    <select class="sort-select">
-                        <option value="">Sırala</option>
-                        <option value="">En Yeni</option>
-                        <option value="price-asc">Fiyat: Düşükten Yükseğe</option>
-                        <option value="price-desc">Fiyat: Yüksekten Düşüğe</option>
-                        <option value="">Ürün Adı A-Z</option>
-                        <option value="">Ürün Adı Z-A</option>
-                    </select>
-                </div>
-                <div class="all-products-grid"></div>
-                <button class="load-more-button">Daha Fazla Yükle</button>
+                    <div class="product-details-header">
+                        <h3>GÖNDERİM BİLGİSİ</h3>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="product-details-content hidden" id="info-shipping">Siparişleriniz, ödemenin onaylanmasının ardından 1-3 iş günü içinde kargoya teslim edilir. Türkiye genelinde anlaşmalı kargo firmalarımızla gönderim yapılmaktadır. 500₺ ve üzeri alışverişlerinizde kargo ücretsizdir. Kargo takip numaranız, ürününüz gönderildiğinde e-posta adresinize iletilir.</div>
+                </aside>
             </div>
         </div>
-    </section>
+    </div>
+  </section>
 
   
   <section class="sign-up">
@@ -215,6 +212,9 @@
       <i class="fa-solid fa-comment"></i> Sohbet Edelim!
     </button>
   </div>
+
+  <!-- Sepet Overlay (karartma) -->
+  <div class="cart-overlay" id="cartOverlay"></div>
 
   <!-- Sepet Paneli -->
   <div class="cart-panel" id="cartPanel">

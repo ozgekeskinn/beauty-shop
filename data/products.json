@@ -3,166 +3,196 @@
     "id": 1,
     "name": "Siyah Güç Göz Kalemi",
     "price": "₺150,00",
-    "image": "../assets/images/products/eye_pencil.png",
-    "hoverImage": "../assets/images/products/eye_pencil_hover.png",
+    "image": "../assets/images/products/eye_pencil.jpg",
+    "hoverImage": "../assets/images/products/eye_pencil_hover.avif",
     "category": "eye",
     "isBestSeller": true,
     "isPopular": false,
-    "isNew": false
+    "isNew": false,
+    "description": "Siyah Güç Göz Kalemi, net ve keskin çizgiler oluşturmak için ideal bir göz kalemidir. Kremsi yapısı sayesinde tek hamlede pürüzsüz uygulama sağlar, gün boyu dağılmadan ve akmadan kalır. Hassas göz bölgesi için nazik formülüyle her gün rahatça kullanılabilir.",
+    "productInfo": "Suya ve teri dayanıklı, uzun süre kalıcı formül. Kremsi dokusu kolay uygulama sağlar, kuruduktan sonra dağılmaz. Oftalmolojik olarak test edilmiş, hassas gözler ve lens kullanıcıları için uygundur. Ucu kırılmaması için kapağını kapalı tutarak saklayın."
   },
   {
     "id": 2,
     "name": "Mat Gül Kurusu Ruj",
     "price": "₺150,00",
-    "image": "../assets/images/products/lipstick.png",
-    "hoverImage": "../assets/images/products/lipstick_hover.png",
+    "image": "../assets/images/products/lipstick.jpg",
+    "hoverImage": "../assets/images/products/lipstick_hover.avif",
     "category": "lips",
     "isBestSeller": true,
     "isPopular": false,
-    "isNew": false
+    "isNew": false,
+    "description": "Mat Gül Kurusu Ruj, dudaklarınıza zengin ve dolgun bir renk kazandıran klasik bir rujdur. Kremsi dokusu kolayca uygulanır, dudakları nemli ve bakımlı gösterir. Tek katta bile dengeli kapatıcılık sunar, günlük ve özel kullanım için idealdir.",
+    "productInfo": "Kremsi, nemlendirici formül. E vitamini ve doğal yağlar içeriğiyle dudakları besler, kuruma yapmaz. Dermatolojik olarak test edilmiştir, parabensiz. Serin ve kuru ortamda, doğrudan ısıdan uzakta saklayın."
   },
   {
     "id": 3,
     "name": "Gül Rengi Likit Ruj",
     "price": "₺150,00",
-    "image": "../assets/images/products/liquid_lipstick.png",
-    "hoverImage": "../assets/images/products/liquid_lipstick_hover.png",
+    "image": "../assets/images/products/liquid_lipstick.avif",
+    "hoverImage": "../assets/images/products/liquid_lipstick_hover.avif",
     "category": "lips",
     "isBestSeller": true,
     "isPopular": false,
-    "isNew": true
+    "isNew": true,
+    "description": "Gül Rengi Likit Ruj, tek dokunuşla dudaklarınızı yoğun renge bürüyen kadifemsi bitişli bir likit rujdur. Hafif dokusu dudaklarda ağırlık hissi bırakmaz, gün boyu konforlu bir kullanım sunar. Uzun süre kalıcı formülüyle tazeleme ihtiyacını en aza indirir.",
+    "productInfo": "Mat ve kadifemsi bitiş, yüksek kalıcılık. Hafif formülü dudakları kurutmadan yoğun renk verir, içeriğindeki nemlendirici bileşenlerle konfor sağlar. Parabensiz. Oda sıcaklığında, kapağı kapalı şekilde saklayın."
   },
   {
     "id": 4,
     "name": "Tam Kapatıcılı Işıltılı Likit Fondöten",
     "price": "₺300,00",
-    "image": "../assets/images/products/foundation.png",
-    "hoverImage": "../assets/images/products/foundation_hover.png",
+    "image": "../assets/images/products/foundation.avif",
+    "hoverImage": "../assets/images/products/foundation_hover.avif",
     "category": "face",
     "isBestSeller": true,
     "isPopular": true,
-    "isNew": false
+    "isNew": false,
+    "description": "Tam Kapatıcılı Işıltılı Likit Fondöten, cildinize kusursuz ve eşit bir ton kazandıran yüksek kapatıcılığa sahip bir likit fondötendir. Hafif dokusu cilde kolayca yayılır, doğal bir bitiş bırakır. Gün boyu kalıcı formülüyle hem günlük hem de özel kullanımda güvenle tercih edilebilir.",
+    "productInfo": "Yüksek kapatıcılık, uzun süre kalıcı formül. Cilde eşit yayılır, leke ve kızarıklıkları doğal şekilde kapatır. Nemlendirici içeriğiyle cildi kurutmaz. Parabensiz, dermatolojik olarak test edilmiştir. Serin ve kuru bir yerde saklayın."
   },
   {
     "id": 5,
     "name": "Işıltılı Pembe Göz Farı",
     "price": "₺150,00",
-    "image": "../assets/images/products/eye_shadow.jpg",
-    "hoverImage": "../assets/images/products/eye_shadow_hover.jpg",
+    "image": "../assets/images/products/eye_shadow.avif",
+    "hoverImage": "../assets/images/products/eye_shadow_hover.avif",
     "category": "eye",
     "isBestSeller": true,
     "isPopular": false,
-    "isNew": true
+    "isNew": true,
+    "description": "Işıltılı Pembe Göz Farı, bakışlarınıza derinlik ve ışıltı katmak için tasarlanmış yüksek pigmentli bir göz farıdır. Pürüzsüz dokusu cilde kolayca yedirilir, gün boyu solmadan kalır. İster hafif bir vurgu ister yoğun bir görünüm için kuru ya da ıslak uygulayabilirsiniz.",
+    "productInfo": "Yüksek pigmentli, uzun süre kalıcı formül. Dökülmeye karşı dayanıklı dokusuyla tek katta bile yoğun renk verir. Parabensiz ve dermatolojik olarak test edilmiştir. Serin ve kuru bir yerde saklayın, doğrudan güneş ışığından uzak tutun."
   },
   {
     "id": 6,
     "name": "Göz Farı Paleti",
     "price": "₺150,00",
     "image": "../assets/images/products/eye_shadow_palette.jpg",
-    "hoverImage": "../assets/images/products/eye_shadow_palette_hover.jpg",
+    "hoverImage": "../assets/images/products/eye_shadow_palette_hover.avif",
     "category": "eye",
     "isBestSeller": true,
     "isPopular": true,
-    "isNew": false
+    "isNew": false,
+    "description": "Göz Farı Paleti, bakışlarınıza derinlik ve ışıltı katmak için tasarlanmış yüksek pigmentli bir göz farıdır. Pürüzsüz dokusu cilde kolayca yedirilir, gün boyu solmadan kalır. İster hafif bir vurgu ister yoğun bir görünüm için kuru ya da ıslak uygulayabilirsiniz.",
+    "productInfo": "Yüksek pigmentli, uzun süre kalıcı formül. Dökülmeye karşı dayanıklı dokusuyla tek katta bile yoğun renk verir. Parabensiz ve dermatolojik olarak test edilmiştir. Serin ve kuru bir yerde saklayın, doğrudan güneş ışığından uzak tutun."
   },
   {
     "id": 7,
     "name": "Çikolata Busesi Likit Ruj",
     "price": "₺150,00",
-    "image": "../assets/images/products/chocolate_liquid_lipstick.png",
-    "hoverImage": "../assets/images/products/chocolate_liquid_lipstick.png",
+    "image": "../assets/images/products/chocolate_liquid_lipstick.avif",
+    "hoverImage": "../assets/images/products/chocolate_liquid_lipstick.avif",
     "category": "lips",
     "isBestSeller": false,
     "isPopular": true,
-    "isNew": false
+    "isNew": false,
+    "description": "Çikolata Busesi Likit Ruj, tek dokunuşla dudaklarınızı yoğun renge bürüyen kadifemsi bitişli bir likit rujdur. Hafif dokusu dudaklarda ağırlık hissi bırakmaz, gün boyu konforlu bir kullanım sunar. Uzun süre kalıcı formülüyle tazeleme ihtiyacını en aza indirir.",
+    "productInfo": "Mat ve kadifemsi bitiş, yüksek kalıcılık. Hafif formülü dudakları kurutmadan yoğun renk verir, içeriğindeki nemlendirici bileşenlerle konfor sağlar. Parabensiz. Oda sıcaklığında, kapağı kapalı şekilde saklayın."
   },
   {
     "id": 8,
     "name": "Koyu Buğday Pudra Fondöten",
     "price": "₺150,00",
-    "image": "../assets/images/products/powder_foundation.png",
-    "hoverImage": "../assets/images/products/powder_foundation.png",
+    "image": "../assets/images/products/powder_foundation.avif",
+    "hoverImage": "../assets/images/products/powder_foundation.avif",
     "category": "face",
     "isBestSeller": false,
     "isPopular": true,
-    "isNew": false
+    "isNew": false,
+    "description": "Koyu Buğday Pudra Fondöten, cildinize doğal ve mat bir görünüm kazandıran ince dokulu bir pudra fondötendir. Gözenekleri ve küçük kusurları gizlerken cildin nefes almasına izin verir. Hafif yapısı sayesinde gün boyu maske etkisi yaratmadan pürüzsüz bir bitiş sağlar.",
+    "productInfo": "İnce dokulu, mat bitişli formül. Parlamayı kontrol eder, gün boyu kalıcılık sunar. Her cilt tipi için uygundur, gözenek sıkıştırmaz. Parabensiz ve dermatolojik olarak test edilmiştir. Kuru bir ortamda, kapağı kapalı saklayın."
   },
   {
     "id": 9,
     "name": "Saten Nude Ruj",
     "price": "₺150,00",
-    "image": "../assets/images/products/nude_lipstick.png",
-    "hoverImage": "../assets/images/products/nude_lipstick.png",
+    "image": "../assets/images/products/nude_lipstick.avif",
+    "hoverImage": "../assets/images/products/nude_lipstick.avif",
     "category": "lips",
     "isBestSeller": false,
     "isPopular": true,
-    "isNew": false
+    "isNew": false,
+    "description": "Saten Nude Ruj, dudaklarınıza zengin ve dolgun bir renk kazandıran klasik bir rujdur. Kremsi dokusu kolayca uygulanır, dudakları nemli ve bakımlı gösterir. Tek katta bile dengeli kapatıcılık sunar, günlük ve özel kullanım için idealdir.",
+    "productInfo": "Kremsi, nemlendirici formül. E vitamini ve doğal yağlar içeriğiyle dudakları besler, kuruma yapmaz. Dermatolojik olarak test edilmiştir, parabensiz. Serin ve kuru ortamda, doğrudan ısıdan uzakta saklayın."
   },
   {
     "id": 10,
     "name": "Bakır Göz Farı",
     "price": "₺150,00",
-    "image": "../assets/images/products/copper_eyeshadow.jpg",
-    "hoverImage": "../assets/images/products/copper_eyeshadow.jpg",
+    "image": "../assets/images/products/copper_eyeshadow.avif",
+    "hoverImage": "../assets/images/products/copper_eyeshadow.avif",
     "category": "eye",
     "isBestSeller": false,
     "isPopular": true,
-    "isNew": false
+    "isNew": false,
+    "description": "Bakır Göz Farı, bakışlarınıza derinlik ve ışıltı katmak için tasarlanmış yüksek pigmentli bir göz farıdır. Pürüzsüz dokusu cilde kolayca yedirilir, gün boyu solmadan kalır. İster hafif bir vurgu ister yoğun bir görünüm için kuru ya da ıslak uygulayabilirsiniz.",
+    "productInfo": "Yüksek pigmentli, uzun süre kalıcı formül. Dökülmeye karşı dayanıklı dokusuyla tek katta bile yoğun renk verir. Parabensiz ve dermatolojik olarak test edilmiştir. Serin ve kuru bir yerde saklayın, doğrudan güneş ışığından uzak tutun."
   },
   {
     "id": 11,
     "name": "Saten Likit Fondöten",
     "price": "₺150,00",
-    "image": "../assets/images/products/satin_foundation.png",
-    "hoverImage": "../assets/images/products/satin_foundation.png",
+    "image": "../assets/images/products/satin_foundation.avif",
+    "hoverImage": "../assets/images/products/satin_foundation.avif",
     "category": "face",
     "isBestSeller": false,
     "isPopular": true,
-    "isNew": false
+    "isNew": false,
+    "description": "Saten Likit Fondöten, cildinize kusursuz ve eşit bir ton kazandıran yüksek kapatıcılığa sahip bir likit fondötendir. Hafif dokusu cilde kolayca yayılır, doğal bir bitiş bırakır. Gün boyu kalıcı formülüyle hem günlük hem de özel kullanımda güvenle tercih edilebilir.",
+    "productInfo": "Yüksek kapatıcılık, uzun süre kalıcı formül. Cilde eşit yayılır, leke ve kızarıklıkları doğal şekilde kapatır. Nemlendirici içeriğiyle cildi kurutmaz. Parabensiz, dermatolojik olarak test edilmiştir. Serin ve kuru bir yerde saklayın."
   },
   {
     "id": 12,
     "name": "Bronz Göz Farı",
     "price": "₺150,00",
-    "image": "../assets/images/products/bronz_goz_fari.png",
-    "hoverImage": "../assets/images/products/bronz_goz_fari.png",
+    "image": "../assets/images/products/bronz_goz_fari.avif",
+    "hoverImage": "../assets/images/products/bronz_goz_fari.avif",
     "category": "eye",
     "isBestSeller": false,
     "isPopular": false,
-    "isNew": true
+    "isNew": true,
+    "description": "Bronz Göz Farı, bakışlarınıza derinlik ve ışıltı katmak için tasarlanmış yüksek pigmentli bir göz farıdır. Pürüzsüz dokusu cilde kolayca yedirilir, gün boyu solmadan kalır. İster hafif bir vurgu ister yoğun bir görünüm için kuru ya da ıslak uygulayabilirsiniz.",
+    "productInfo": "Yüksek pigmentli, uzun süre kalıcı formül. Dökülmeye karşı dayanıklı dokusuyla tek katta bile yoğun renk verir. Parabensiz ve dermatolojik olarak test edilmiştir. Serin ve kuru bir yerde saklayın, doğrudan güneş ışığından uzak tutun."
   },
   {
     "id": 13,
     "name": "Gümüş Göz Farı",
     "price": "₺150,00",
-    "image": "../assets/images/products/gumus_goz_fari.png",
-    "hoverImage": "../assets/images/products/gumus_goz_fari.png",
+    "image": "../assets/images/products/gumus_goz_fari.avif",
+    "hoverImage": "../assets/images/products/gumus_goz_fari.avif",
     "category": "eye",
     "isBestSeller": false,
     "isPopular": false,
-    "isNew": true
+    "isNew": true,
+    "description": "Gümüş Göz Farı, bakışlarınıza derinlik ve ışıltı katmak için tasarlanmış yüksek pigmentli bir göz farıdır. Pürüzsüz dokusu cilde kolayca yedirilir, gün boyu solmadan kalır. İster hafif bir vurgu ister yoğun bir görünüm için kuru ya da ıslak uygulayabilirsiniz.",
+    "productInfo": "Yüksek pigmentli, uzun süre kalıcı formül. Dökülmeye karşı dayanıklı dokusuyla tek katta bile yoğun renk verir. Parabensiz ve dermatolojik olarak test edilmiştir. Serin ve kuru bir yerde saklayın, doğrudan güneş ışığından uzak tutun."
   },
   {
     "id": 14,
     "name": "Altın Sarısı Göz Farı",
     "price": "₺150,00",
-    "image": "../assets/images/products/altin_sarisi_goz_fari.png",
-    "hoverImage": "../assets/images/products/altin_sarisi_goz_fari.png",
+    "image": "../assets/images/products/altin_sarisi_goz_fari.avif",
+    "hoverImage": "../assets/images/products/altin_sarisi_goz_fari.avif",
     "category": "eye",
     "isBestSeller": false,
     "isPopular": false,
-    "isNew": true
+    "isNew": true,
+    "description": "Altın Sarısı Göz Farı, bakışlarınıza derinlik ve ışıltı katmak için tasarlanmış yüksek pigmentli bir göz farıdır. Pürüzsüz dokusu cilde kolayca yedirilir, gün boyu solmadan kalır. İster hafif bir vurgu ister yoğun bir görünüm için kuru ya da ıslak uygulayabilirsiniz.",
+    "productInfo": "Yüksek pigmentli, uzun süre kalıcı formül. Dökülmeye karşı dayanıklı dokusuyla tek katta bile yoğun renk verir. Parabensiz ve dermatolojik olarak test edilmiştir. Serin ve kuru bir yerde saklayın, doğrudan güneş ışığından uzak tutun."
   },
   {
     "id": 15,
     "name": "Gri Yeşil Göz Farı",
     "price": "₺150,00",
-    "image": "../assets/images/products/gri_yesil_goz_fari.png",
-    "hoverImage": "../assets/images/products/gri_yesil_goz_fari.png",
+    "image": "../assets/images/products/gri_yesil_goz_fari.avif",
+    "hoverImage": "../assets/images/products/gri_yesil_goz_fari.avif",
     "category": "eye",
     "isBestSeller": false,
     "isPopular": false,
-    "isNew": true
+    "isNew": true,
+    "description": "Gri Yeşil Göz Farı, bakışlarınıza derinlik ve ışıltı katmak için tasarlanmış yüksek pigmentli bir göz farıdır. Pürüzsüz dokusu cilde kolayca yedirilir, gün boyu solmadan kalır. İster hafif bir vurgu ister yoğun bir görünüm için kuru ya da ıslak uygulayabilirsiniz.",
+    "productInfo": "Yüksek pigmentli, uzun süre kalıcı formül. Dökülmeye karşı dayanıklı dokusuyla tek katta bile yoğun renk verir. Parabensiz ve dermatolojik olarak test edilmiştir. Serin ve kuru bir yerde saklayın, doğrudan güneş ışığından uzak tutun."
   },
   {
     "id": 16,
@@ -174,7 +204,9 @@
     "isBestSeller": false,
     "isPopular": false,
     "isNew": false,
-    "isFace": true
+    "isFace": true,
+    "description": "Geysa Pudra Fondöten, cildinize doğal ve mat bir görünüm kazandıran ince dokulu bir pudra fondötendir. Gözenekleri ve küçük kusurları gizlerken cildin nefes almasına izin verir. Hafif yapısı sayesinde gün boyu maske etkisi yaratmadan pürüzsüz bir bitiş sağlar.",
+    "productInfo": "İnce dokulu, mat bitişli formül. Parlamayı kontrol eder, gün boyu kalıcılık sunar. Her cilt tipi için uygundur, gözenek sıkıştırmaz. Parabensiz ve dermatolojik olarak test edilmiştir. Kuru bir ortamda, kapağı kapalı saklayın."
   },
   {
     "id": 17,
@@ -186,7 +218,9 @@
     "isBestSeller": false,
     "isPopular": false,
     "isNew": false,
-    "isFace": true
+    "isFace": true,
+    "description": "Koyu Buğday Pudra Fondöten, cildinize doğal ve mat bir görünüm kazandıran ince dokulu bir pudra fondötendir. Gözenekleri ve küçük kusurları gizlerken cildin nefes almasına izin verir. Hafif yapısı sayesinde gün boyu maske etkisi yaratmadan pürüzsüz bir bitiş sağlar.",
+    "productInfo": "İnce dokulu, mat bitişli formül. Parlamayı kontrol eder, gün boyu kalıcılık sunar. Her cilt tipi için uygundur, gözenek sıkıştırmaz. Parabensiz ve dermatolojik olarak test edilmiştir. Kuru bir ortamda, kapağı kapalı saklayın."
   },
   {
     "id": 18,
@@ -198,7 +232,9 @@
     "isBestSeller": false,
     "isPopular": false,
     "isNew": false,
-    "isFace": true
+    "isFace": true,
+    "description": "Tam Kapatıcılı Işıltılı Likit Fondöten, cildinize kusursuz ve eşit bir ton kazandıran yüksek kapatıcılığa sahip bir likit fondötendir. Hafif dokusu cilde kolayca yayılır, doğal bir bitiş bırakır. Gün boyu kalıcı formülüyle hem günlük hem de özel kullanımda güvenle tercih edilebilir.",
+    "productInfo": "Yüksek kapatıcılık, uzun süre kalıcı formül. Cilde eşit yayılır, leke ve kızarıklıkları doğal şekilde kapatır. Nemlendirici içeriğiyle cildi kurutmaz. Parabensiz, dermatolojik olarak test edilmiştir. Serin ve kuru bir yerde saklayın."
   },
   {
     "id": 19,
@@ -210,7 +246,9 @@
     "isBestSeller": false,
     "isPopular": false,
     "isNew": false,
-    "isFace": true
+    "isFace": true,
+    "description": "Tam Kapatıcılı Mat Likit Fondöten, cildinize kusursuz ve eşit bir ton kazandıran yüksek kapatıcılığa sahip bir likit fondötendir. Hafif dokusu cilde kolayca yayılır, doğal bir bitiş bırakır. Gün boyu kalıcı formülüyle hem günlük hem de özel kullanımda güvenle tercih edilebilir.",
+    "productInfo": "Yüksek kapatıcılık, uzun süre kalıcı formül. Cilde eşit yayılır, leke ve kızarıklıkları doğal şekilde kapatır. Nemlendirici içeriğiyle cildi kurutmaz. Parabensiz, dermatolojik olarak test edilmiştir. Serin ve kuru bir yerde saklayın."
   },
   {
     "id": 20,
@@ -222,7 +260,9 @@
     "isBestSeller": false,
     "isPopular": false,
     "isNew": false,
-    "isFace": true
+    "isFace": true,
+    "description": "Transparan Pudra Fondöten, cildinize doğal ve mat bir görünüm kazandıran ince dokulu bir pudra fondötendir. Gözenekleri ve küçük kusurları gizlerken cildin nefes almasına izin verir. Hafif yapısı sayesinde gün boyu maske etkisi yaratmadan pürüzsüz bir bitiş sağlar.",
+    "productInfo": "İnce dokulu, mat bitişli formül. Parlamayı kontrol eder, gün boyu kalıcılık sunar. Her cilt tipi için uygundur, gözenek sıkıştırmaz. Parabensiz ve dermatolojik olarak test edilmiştir. Kuru bir ortamda, kapağı kapalı saklayın."
   },
   {
     "id": 21,
@@ -234,7 +274,9 @@
     "isBestSeller": false,
     "isPopular": false,
     "isNew": false,
-    "isFace": true
+    "isFace": true,
+    "description": "Saten Likit Fondöten, cildinize kusursuz ve eşit bir ton kazandıran yüksek kapatıcılığa sahip bir likit fondötendir. Hafif dokusu cilde kolayca yayılır, doğal bir bitiş bırakır. Gün boyu kalıcı formülüyle hem günlük hem de özel kullanımda güvenle tercih edilebilir.",
+    "productInfo": "Yüksek kapatıcılık, uzun süre kalıcı formül. Cilde eşit yayılır, leke ve kızarıklıkları doğal şekilde kapatır. Nemlendirici içeriğiyle cildi kurutmaz. Parabensiz, dermatolojik olarak test edilmiştir. Serin ve kuru bir yerde saklayın."
   },
   {
     "id": 22,
@@ -245,7 +287,9 @@
     "category": "lips",
     "isBestSeller": false,
     "isPopular": false,
-    "isNew": false
+    "isNew": false,
+    "description": "Kahverengi Güç Dudak Kalemi, dudak konturlarınızı belirginleştirmek ve rujun daha uzun süre kalmasını sağlamak için tasarlanmış bir dudak kalemidir. Yumuşak ve kremsi ucu pürüzsüz uygulama sunar, dudaklarınıza net bir çerçeve kazandırır. Tek başına ya da rujla birlikte kullanılabilir.",
+    "productInfo": "Kremsi ve kolay uygulanabilir uç, uzun süre kalıcılık. Dudak hatlarını belirginleştirir, rujun dağılmasını önler. Dermatolojik olarak test edilmiş, parabensizdir. Ucunu korumak için kapağı kapalı şekilde saklayın."
   },
   {
     "id": 23,
@@ -256,7 +300,9 @@
     "category": "lips",
     "isBestSeller": false,
     "isPopular": false,
-    "isNew": false
+    "isNew": false,
+    "description": "Çikolata Busesi Likit Ruj, tek dokunuşla dudaklarınızı yoğun renge bürüyen kadifemsi bitişli bir likit rujdur. Hafif dokusu dudaklarda ağırlık hissi bırakmaz, gün boyu konforlu bir kullanım sunar. Uzun süre kalıcı formülüyle tazeleme ihtiyacını en aza indirir.",
+    "productInfo": "Mat ve kadifemsi bitiş, yüksek kalıcılık. Hafif formülü dudakları kurutmadan yoğun renk verir, içeriğindeki nemlendirici bileşenlerle konfor sağlar. Parabensiz. Oda sıcaklığında, kapağı kapalı şekilde saklayın."
   },
   {
     "id": 24,
@@ -267,7 +313,9 @@
     "category": "lips",
     "isBestSeller": false,
     "isPopular": false,
-    "isNew": false
+    "isNew": false,
+    "description": "Gül Rengi Likit Ruj, tek dokunuşla dudaklarınızı yoğun renge bürüyen kadifemsi bitişli bir likit rujdur. Hafif dokusu dudaklarda ağırlık hissi bırakmaz, gün boyu konforlu bir kullanım sunar. Uzun süre kalıcı formülüyle tazeleme ihtiyacını en aza indirir.",
+    "productInfo": "Mat ve kadifemsi bitiş, yüksek kalıcılık. Hafif formülü dudakları kurutmadan yoğun renk verir, içeriğindeki nemlendirici bileşenlerle konfor sağlar. Parabensiz. Oda sıcaklığında, kapağı kapalı şekilde saklayın."
   },
   {
     "id": 25,
@@ -278,7 +326,9 @@
     "category": "lips",
     "isBestSeller": false,
     "isPopular": false,
-    "isNew": false
+    "isNew": false,
+    "description": "Mat Bordo Ruj, dudaklarınıza zengin ve dolgun bir renk kazandıran klasik bir rujdur. Kremsi dokusu kolayca uygulanır, dudakları nemli ve bakımlı gösterir. Tek katta bile dengeli kapatıcılık sunar, günlük ve özel kullanım için idealdir.",
+    "productInfo": "Kremsi, nemlendirici formül. E vitamini ve doğal yağlar içeriğiyle dudakları besler, kuruma yapmaz. Dermatolojik olarak test edilmiştir, parabensiz. Serin ve kuru ortamda, doğrudan ısıdan uzakta saklayın."
   },
   {
     "id": 26,
@@ -289,7 +339,9 @@
     "category": "lips",
     "isBestSeller": false,
     "isPopular": false,
-    "isNew": false
+    "isNew": false,
+    "description": "Mat Gül Kurusu Ruj, dudaklarınıza zengin ve dolgun bir renk kazandıran klasik bir rujdur. Kremsi dokusu kolayca uygulanır, dudakları nemli ve bakımlı gösterir. Tek katta bile dengeli kapatıcılık sunar, günlük ve özel kullanım için idealdir.",
+    "productInfo": "Kremsi, nemlendirici formül. E vitamini ve doğal yağlar içeriğiyle dudakları besler, kuruma yapmaz. Dermatolojik olarak test edilmiştir, parabensiz. Serin ve kuru ortamda, doğrudan ısıdan uzakta saklayın."
   },
   {
     "id": 27,
@@ -300,7 +352,9 @@
     "category": "lips",
     "isBestSeller": false,
     "isPopular": false,
-    "isNew": false
+    "isNew": false,
+    "description": "Saten Nude Ruj, dudaklarınıza zengin ve dolgun bir renk kazandıran klasik bir rujdur. Kremsi dokusu kolayca uygulanır, dudakları nemli ve bakımlı gösterir. Tek katta bile dengeli kapatıcılık sunar, günlük ve özel kullanım için idealdir.",
+    "productInfo": "Kremsi, nemlendirici formül. E vitamini ve doğal yağlar içeriğiyle dudakları besler, kuruma yapmaz. Dermatolojik olarak test edilmiştir, parabensiz. Serin ve kuru ortamda, doğrudan ısıdan uzakta saklayın."
   },
   {
     "id": 28,
@@ -311,6 +365,8 @@
     "category": "eye",
     "isBestSeller": false,
     "isPopular": false,
-    "isNew": false
+    "isNew": false,
+    "description": "Fırçalı Eyeliner, net ve keskin çizgiler oluşturmak için ideal bir göz kalemidir. Kremsi yapısı sayesinde tek hamlede pürüzsüz uygulama sağlar, gün boyu dağılmadan ve akmadan kalır. Hassas göz bölgesi için nazik formülüyle her gün rahatça kullanılabilir.",
+    "productInfo": "Suya ve teri dayanıklı, uzun süre kalıcı formül. Kremsi dokusu kolay uygulama sağlar, kuruduktan sonra dağılmaz. Oftalmolojik olarak test edilmiş, hassas gözler ve lens kullanıcıları için uygundur. Ucu kırılmaması için kapağını kapalı tutarak saklayın."
   }
 ]

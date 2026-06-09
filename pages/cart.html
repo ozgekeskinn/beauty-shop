@@ -68,73 +68,57 @@
     </section>
   </div>
 
-    <section class="hero-section hero-page">
-    <div class="hero-section-content">
-        <h5>TÜM ÜRÜNLER</h5>
-    </div>
-    <img src="../assets/images/hero/all_products_page.avif" class="hero-image" alt="hero">
-    </section>
+  <section class="cart-page">
+    <div class="cart-page-container">
 
-    <section class="all-products-section">
-        <div class="all-products-container">
-
-            <!-- Sol: Filtre Paneli -->
-            <aside class="filter-panel">
-                <h3>Filtrele:</h3>
-                <hr>
-                <div class="filter-group">
-                    <div class="filter-group-header">
-                        <span class="filter-group-header-active">Kategori</span>
-                        <i class="fa-solid fa-minus"></i>
-                    </div>
-                    <ul class="filter-list">
-                        <li class="filter-item item-all active">Hepsi</li>
-                        <li class="filter-item item-eye">Göz</li>
-                        <li class="filter-item item-face">Yüz</li>
-                        <li class="filter-item item-lips">Dudak</li>
-                        <li class="filter-item item-bestseller">En Çok Satanlar</li>
-                    </ul>
+        <div class="cart-left">
+            <h2>Alışveriş Sepetim</h2>
+            <hr>
+            <div class="cart-page-items" id="cartPageItems">
+                <!-- Sepet ürünleri JS ile gelecek -->
+            </div>
+            <div class="cart-extra">
+                <div class="cart-extra-item">
+                <i class="fa-solid fa-tag"></i>
+                <span>Bir promosyon kodu girin</span>
                 </div>
-                <hr>
-                <div class="filter-group">
-                  <div class="filter-group-header">
-                      <span class="filter-group-header-hidden">Fiyat</span>
-                      <i class="fa-solid fa-minus"></i>
-                  </div>
 
-                  <div class="price-filter">
-                      <div class="price-slider">
-                          <div class="price-track"></div>
-                          <div class="price-track-fill" id="priceTrackFill"></div>
-                          <input type="range" id="priceMin" min="150" max="300" value="150" step="10">
-                          <input type="range" id="priceMax" min="150" max="300" value="300" step="10">
-                      </div>
-                      <div class="price-values">
-                          <span id="priceMinVal">₺150</span>
-                          <span id="priceMaxVal">₺300</span>
-                      </div>
-                  </div>
-              </div>
-            </aside>
-
-            <!-- Sağ: Ürünler -->
-            <div class="all-products-right">
-                <div class="sort-bar">
-                    <select class="sort-select">
-                        <option value="">Sırala</option>
-                        <option value="">En Yeni</option>
-                        <option value="price-asc">Fiyat: Düşükten Yükseğe</option>
-                        <option value="price-desc">Fiyat: Yüksekten Düşüğe</option>
-                        <option value="">Ürün Adı A-Z</option>
-                        <option value="">Ürün Adı Z-A</option>
-                    </select>
+                <div class="cart-extra-item">
+                <i class="fa-regular fa-file"></i>
+                <span>Bir not ekle</span>
                 </div>
-                <div class="all-products-grid"></div>
-                <button class="load-more-button">Daha Fazla Yükle</button>
             </div>
         </div>
-    </section>
 
+        <div class="cart-summary">
+            <h2>Sipariş Özeti</h2>
+            <hr>
+            <div class="summary-row">
+                <span>Ara Toplam</span>
+                <span id="summarySubtotal">₺0,00</span>
+            </div>
+
+            <div class="summary-row shipping">
+                <span>Kargo</span>
+                <a href="#">İstanbul, Türkiye</a>
+            </div>
+            <hr>
+
+            <div class="summary-row total">
+                <span>Toplam</span>
+                <span id="summaryTotal">₺0,00</span>
+            </div>
+
+            <button class="checkout-btn">Ödemeye Geç</button>
+
+            <p class="secure-payment">
+                <i class="fa-solid fa-lock"></i>
+                    Güvenli Ödeme
+            </p>
+        </div>
+
+    </div>
+    </section>
   
   <section class="sign-up">
       <div class="sign-up-container">
@@ -215,6 +199,10 @@
       <i class="fa-solid fa-comment"></i> Sohbet Edelim!
     </button>
   </div>
+
+
+  <!-- Sepet Overlay (karartma) -->
+  <div class="cart-overlay" id="cartOverlay"></div>
 
   <!-- Sepet Paneli -->
   <div class="cart-panel" id="cartPanel">
